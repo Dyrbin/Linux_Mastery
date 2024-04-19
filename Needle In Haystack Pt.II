@@ -1,0 +1,9 @@
+#Create 100 files in 36 folders and randomly insert a file called NeedleInHaystack; use find command from root directory to find the needle
+mkdir ~/Desktop/Haystack
+cd ~/Desktop/Haystack
+mkdir {jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec}_{2024..2026}
+touch {jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec}_{2024..2026}/file{1..100}
+
+touch ~/Desktop/Haystack/*$(shuf -l 2024-2026 -n 1)/needle.txt
+cd
+find . -name "needle.txt" > ~/Desktop/NeedleInHayStack.txt
