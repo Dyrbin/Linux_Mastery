@@ -1,0 +1,6 @@
+#Tee STDOUT 
+date | tee fulldate.txt | cut --delimiter " " --field 1 > today.txt
+
+#Convert Piped Data
+date | xargs echo hello
+Result: hello "CurrentDate"
