@@ -1,0 +1,6 @@
+#!/bin/bash
+
+crontab -e
+0,15,30,45    *    *    *    *    echo "Wodae" >> ~/Desktop/Wodae.txt
+
+#create bash script that writes "Wodae" to a .txt file every 15, 30, 45, 60 minutes
