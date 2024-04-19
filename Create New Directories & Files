@@ -1,0 +1,8 @@
+#!/bin/bash
+
+mkdir ~/Desktop/Magic/MagicLog
+cd ~/Desktop
+touch /Magic/File{1-100}
+ls -lh ~/Desktop/Magic > ~/Desktop/Magic/MagicLog
+
+##Create folders Magic and MagicLog, create 100 files and place them in Magic Folder, list directory contents/information of Magic Folder and write to a text file in MagicLog
